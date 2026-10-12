@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>Mis juegos</title>
+    <meta name="description" content="Competencia Online y Vaelis." />
+    <link rel="icon" href="competencia.png" />
+    <style>
+      :root {
+        --fondo: #0b1020;
+        --tarjeta: #141a30;
+        --borde: #252d4a;
+        --texto: #eef1fa;
+        --suave: #9aa3c0;
+        --acento: #f5c451;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; }
+      body {
+        min-height: 100vh;
+        background:
+          radial-gradient(60rem 30rem at 50% -10rem, #1c2550 0%, transparent 70%),
+          var(--fondo);
+        color: var(--texto);
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: max(3rem, env(safe-area-inset-top)) 1rem max(2rem, env(safe-area-inset-bottom));
+      }
+      main { width: 100%; max-width: 32rem; flex: 1; }
+      h1 {
+        margin: 0 0 2.5rem;
+        text-align: center;
+        font-size: clamp(2rem, 9vw, 2.75rem);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      h1 span { color: var(--acento); }
+      .lista { display: grid; gap: 1rem; }
+      .app {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid var(--borde);
+        border-radius: 1.25rem;
+        background: var(--tarjeta);
+      }
+      .app img { width: 4.5rem; height: 4.5rem; border-radius: 1rem; flex: none; }
+      .app h2 { margin: 0; font-size: 1.15rem; }
+      .app p { margin: 0.2rem 0 0.75rem; color: var(--suave); font-size: 0.9rem; }
+      .boton {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 1.1rem;
+        border-radius: 999px;
+        background: var(--acento);
+        color: #1a1405;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .boton:active { transform: scale(0.97); }
+      footer { margin-top: 3rem; color: var(--suave); font-size: 0.8rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Mis <span>juegos</span></h1>
+      <div class="lista">
+      <article class="app">
+        <img src="competencia.png" alt="" width="72" height="72" />
+        <div>
+          <h2>Competencia Online</h2>
+          <p>Juegos clásicos, lógicos y de mesa con rankings competitivos en tiempo real.</p>
+          <a class="boton" href="https://www.competenciaonline.com">Jugar</a>
+        </div>
+      </article>
+      <article class="app">
+        <img src="vaelis.png" alt="" width="72" height="72" />
+        <div>
+          <h2>Vaelis</h2>
+          <p>Action-RPG por turnos de criaturas elementales. Colecciona, entrena y despierta a los Vaelis.</p>
+          <a class="boton" href="https://vaelis-game.vercel.app">Jugar</a>
+        </div>
+      </article>
+      </div>
+    </main>
+    <footer>© 2026</footer>
+  </body>
+</html>
