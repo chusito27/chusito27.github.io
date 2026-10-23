@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacidad · Un Juego de Costa Rica</title>
+    <meta name="description" content="Política de privacidad de Un Juego de Costa Rica, de Chusito Games." />
+    <style>
+      :root {
+        --fondo: #0b1020;
+        --tarjeta: #141a30;
+        --borde: #252d4a;
+        --texto: #eef1fa;
+        --suave: #9aa3c0;
+        --acento: #f5c451;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; }
+      body {
+        min-height: 100vh;
+        background:
+          radial-gradient(60rem 30rem at 50% -10rem, #1c2550 0%, transparent 70%),
+          var(--fondo);
+        color: var(--texto);
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: max(3rem, env(safe-area-inset-top)) 1rem max(2rem, env(safe-area-inset-bottom));
+      }
+      main { width: 100%; max-width: 40rem; flex: 1; }
+      header { text-align: center; margin-bottom: 2rem; }
+      header img { width: 5rem; height: 5rem; border-radius: 1.1rem; }
+      h1 { margin: 0.75rem 0 0; font-size: clamp(1.5rem, 6vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
+      header p { margin: 0.4rem 0 0; color: var(--suave); font-size: 0.9rem; }
+      section {
+        padding: 1.25rem 1.25rem 0.5rem;
+        border: 1px solid var(--borde);
+        border-radius: 1.25rem;
+        background: var(--tarjeta);
+        margin-bottom: 1.25rem;
+      }
+      h2 { margin: 0 0 0.5rem; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--acento); }
+      p, li { overflow-wrap: anywhere; }
+      a { color: var(--acento); }
+      .volver { display: inline-flex; align-items: center; min-height: 44px; color: var(--suave); }
+      footer { margin-top: 2rem; color: var(--suave); font-size: 0.8rem; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="../costarica.png" alt="" width="80" height="80" />
+        <h1>Un Juego de Costa Rica</h1>
+        <p>Política de privacidad · Privacy policy · Última actualización: 23 de octubre de 2026</p>
+      </header>
+
+      <section lang="es">
+        <h2>Español</h2>
+        <p><strong>Un Juego de Costa Rica</strong>, de <strong>Chusito Games</strong> (Orlando Jesús Calvo Vargas), funciona 100 % sin conexión.</p>
+        <ul>
+          <li>El juego <strong>no recoge, no vende y no envía ningún dato personal</strong>.</li>
+          <li>No tiene cuentas de usuario, anuncios, analíticas, compras dentro del juego ni SDK de terceros que recojan datos.</li>
+          <li>Lo único que guarda es tu progreso (destinos completados y opciones) en un archivo de tu propio dispositivo. Si desinstalás el juego, ese archivo se borra.</li>
+          <li>Si jugás desde Steam, Steam puede respaldar ese archivo en su nube según tu configuración de Steam Cloud. Si jugás en Android, el sistema puede incluirlo en la copia de seguridad de tu cuenta de Google. Eso lo manejan Valve y Google según sus propias políticas de privacidad.</li>
+          <li>El juego no pide permisos del dispositivo (ubicación, cámara, micrófono, contactos ni almacenamiento externo).</li>
+        </ul>
+        <p>Si esta política cambia, se publicará aquí con su nueva fecha. Para cualquier consulta: <a href="mailto:soychusitogaming@gmail.com">soychusitogaming@gmail.com</a>.</p>
+      </section>
+
+      <section lang="en">
+        <h2>English</h2>
+        <p><strong>Un Juego de Costa Rica</strong>, by <strong>Chusito Games</strong> (Orlando Jesús Calvo Vargas), works 100% offline.</p>
+        <ul>
+          <li>The game <strong>does not collect, sell or send any personal data</strong>.</li>
+          <li>It has no user accounts, ads, analytics, in-game purchases or third-party SDKs that collect data.</li>
+          <li>The only thing it stores is your progress (completed destinations and settings) in a file on your own device. Uninstalling the game deletes that file.</li>
+          <li>If you play on Steam, Steam may back up that file to its cloud according to your Steam Cloud settings. On Android, the system may include it in your Google account backup. Valve and Google handle that under their own privacy policies.</li>
+          <li>The game does not request any device permissions (location, camera, microphone, contacts or external storage).</li>
+        </ul>
+        <p>If this policy changes, the new version will be posted here with its date. For any questions: <a href="mailto:soychusitogaming@gmail.com">soychusitogaming@gmail.com</a>.</p>
+      </section>
+
+      <a class="volver" href="../">← Chusito Games</a>
+    </main>
+    <footer>© 2026 Chusito Games · Orlando Jesús Calvo Vargas</footer>
+  </body>
+</html>
